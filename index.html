@@ -1,0 +1,760 @@
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>
+        Portfolio
+    </title>
+    <script src="https://cdn.tailwindcss.com">
+    </script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Exo+2:wght@400;700&amp;family=Roboto+Mono:wght@400;700&amp;display=swap"
+        rel="stylesheet" />
+    <style>
+        body {
+            font-family: 'Roboto Mono', monospace;
+        }
+
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6 {
+            font-family: 'Exo 2', sans-serif;
+        }
+    </style>
+</head>
+
+<body class="bg-gray-100 text-gray-900">
+    <!-- Header & Navigation -->
+    <header class="fixed w-full bg-transparent transition-colors duration-300 ease-in-out z-50" id="header">
+        <div class="container mx-auto flex justify-between items-center p-4">
+            <div class="text-2xl font-bold text-white">
+                My Portfolio
+            </div>
+            <nav class="hidden md:flex space-x-4">
+                <a class="hover:text-gray-300 text-white transition" href="#home">
+                    Home
+                </a>
+                <a class="hover:text-gray-300 text-white transition" href="#tentang">
+                    Tentang
+                </a>
+                <a class="hover:text-gray-300 text-white transition" href="#portfolio">
+                    Portfolio
+                </a>
+                <a class="hover:text-gray-300 text-white transition" href="#layanan">
+                    Layanan
+                </a>
+                <a class="hover:text-gray-300 text-white transition" href="#blog">
+                    Blog
+                </a>
+                <a class="hover:text-gray-300 text-white transition" href="#contact">
+                    Contact
+                </a>
+            </nav>
+            <div class="md:hidden text-white">
+                <i class="fas fa-bars text-2xl">
+                </i>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section
+            class="h-screen flex items-center justify-center bg-gradient-to-r from-gray-700 to-gray-900 text-white relative"
+            id="home">
+            <img alt="Decorative background image of a modern cityscape at night"
+                class="absolute inset-0 w-full h-full object-cover opacity-30" height="1080"
+                src="https://storage.googleapis.com/a1aa/image/IlLk9gZYzv_iKeBOpLL6ho9FHa2Wq2w8Q7XzIWTydDo.jpg"
+                width="1920" />
+            <div class="relative text-center">
+                <h1 class="text-5xl font-bold mb-4">
+                    Welcome to My Portfolio
+                </h1>
+                <p class="text-xl mb-8">
+                    Showcasing my work and skills
+                </p>
+                <a class="bg-white text-gray-900 px-6 py-3 rounded-full hover:bg-gray-200 transition" href="#portfolio">
+                    View My Work
+                </a>
+            </div>
+        </section>
+        <!-- Profile & Tentang Saya -->
+        <section class="py-16 bg-gray-100" id="tentang">
+            <div class="container mx-auto grid grid-cols-1 lg:grid-cols-2 gap-8 items-center px-4 md:px-8 lg:px-16">
+                <div class="flex justify-center">
+                    <div class="relative">
+                        <img alt="Foto profil pengembang"
+                            class="rounded-full shadow-lg transform hover:scale-105 transition duration-300 border-4 border-gray-300"
+                            height="300"
+                            src="https://storage.googleapis.com/a1aa/image/RKQFrX3JIwEsFEs1D5IDD4PBKJhhvHACrumYHauVF20.jpg"
+                            width="300" />
+                        <div
+                            class="absolute bottom-0 left-0 right-0 bg-gray-900 bg-opacity-75 text-white text-center py-2 rounded-b-full">
+                            <h3 class="text-xl font-bold">
+                                Muhammad Affif
+                            </h3>
+                            <p class="text-sm">
+                                Lead, Nourivex
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="flex flex-col justify-center p-6 bg-white rounded-lg shadow-lg border border-gray-300">
+                    <div class="flex items-center mb-4">
+                        <i class="fas fa-user-tie text-4xl text-gray-700 mr-4">
+                        </i>
+                        <h2 class="text-4xl font-bold text-gray-800">
+                            Tentang Saya
+                        </h2>
+                    </div>
+                    <p class="text-lg mb-4 text-gray-700">
+                        Saya adalah seorang pengembang web yang bersemangat dengan kemampuan untuk menciptakan situs web
+                        yang menakjubkan dan fungsional. Dengan latar belakang dalam desain dan pengembangan, saya
+                        membawa
+                        perspektif unik ke setiap proyek.
+                    </p>
+                    <p class="text-lg mb-4 text-gray-700">
+                        Keahlian saya meliputi HTML, CSS, JavaScript, dan berbagai framework serta library modern. Saya
+                        selalu bersemangat untuk mempelajari teknologi baru dan meningkatkan keterampilan saya.
+                    </p>
+                </div>
+            </div>
+        </section>
+        <!-- Portfolio Gallery -->
+        <section class="py-16 bg-gray-200 border-4 border-gray-300 rounded-lg mx-4 md:mx-8 lg:mx-16" id="portfolio">
+            <div class="container mx-auto px-4 md:px-8 lg:px-16">
+                <h2 class="text-4xl font-bold text-center mb-8 text-gray-800 relative inline-block">
+                    <span class="relative z-10" style="font-family: 'Merriweather', serif;">
+                        My Work
+                    </span>
+                    <span class="absolute inset-x-0 bottom-0 h-2 bg-yellow-500 z-0">
+                    </span>
+                </h2>
+                <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
+                    <div class="relative group border-4 border-gray-300 rounded-lg overflow-hidden shadow-lg">
+                        <img alt="Thumbnail of project 1, a web application project" class="w-full h-full object-cover"
+                            height="300"
+                            src="https://storage.googleapis.com/a1aa/image/CejcRblKFTg-nJ5LoxqpYG5frSz_0zIY-8CByPBl_UY.jpg"
+                            width="400" />
+                        <div class="absolute top-2 right-2 text-yellow-500">
+                            <i class="fas fa-shopping-cart text-2xl">
+                            </i>
+                        </div>
+                        <div class="absolute inset-0 bg-gray-900 bg-opacity-50 flex flex-col items-center justify-center opacity-0 group-hover:opacity-100 transition border-4 border-yellow-500 rounded-lg"
+                            id="project-overlay-1">
+                            <i class="fas fa-book-open text-4xl text-white mb-2">
+                            </i>
+                            <p class="text-white text-lg">
+                                Project 1
+                            </p>
+                            <p class="text-white text-sm">
+                                Deskripsi singkat tentang proyek 1.
+                            </p>
+                        </div>
+                        <div
+                            class="absolute bottom-2 left-2 text-yellow-500 flex items-center space-x-2 bg-gray-800 bg-opacity-75 p-1 rounded">
+                            <div class="flex space-x-1">
+                                <i class="fab fa-html5 text-red-600">
+                                </i>
+                                <i class="fab fa-css3-alt text-blue-600">
+                                </i>
+                                <i class="fab fa-js text-yellow-500">
+                                </i>
+                            </div>
+                        </div>
+                        <div
+                            class="absolute bottom-2 left-1/2 transform -translate-x-1/2 text-yellow-500 flex items-center space-x-1 bg-gray-800 bg-opacity-75 p-1 rounded">
+                            <div class="flex space-x-1">
+                                <i class="fas fa-star">
+                                </i>
+                                <i class="fas fa-star">
+                                </i>
+                                <i class="fas fa-star">
+                                </i>
+                                <i class="fas fa-star">
+                                </i>
+                                <i class="fas fa-star-half-alt">
+                                </i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="relative group border-4 border-gray-300 rounded-lg overflow-hidden shadow-lg">
+                        <img alt="Thumbnail of project 2, a web application project" class="w-full h-full object-cover"
+                            height="300"
+                            src="https://storage.googleapis.com/a1aa/image/2sa8Wn_R28RKNxb7Jmuah_-XtJxs_KgUvK2C5DhxeGU.jpg"
+                            width="400" />
+                        <div class="absolute top-2 right-2 text-blue-500">
+                            <i class="fas fa-code text-2xl">
+                            </i>
+                        </div>
+                        <div class="absolute inset-0 bg-gray-900 bg-opacity-50 flex flex-col items-center justify-center opacity-0 group-hover:opacity-100 transition border-4 border-blue-500 rounded-lg"
+                            id="project-overlay-2">
+                            <i class="fas fa-book-open text-4xl text-white mb-2">
+                            </i>
+                            <p class="text-white text-lg">
+                                Project 2
+                            </p>
+                            <p class="text-white text-sm">
+                                Deskripsi singkat tentang proyek 2.
+                            </p>
+                        </div>
+                        <div
+                            class="absolute bottom-2 left-2 text-yellow-500 flex items-center space-x-2 bg-gray-800 bg-opacity-75 p-1 rounded">
+                            <div class="flex space-x-1">
+                                <i class="fab fa-laravel text-red-600">
+                                </i>
+                                <i class="fab fa-bootstrap text-purple-600">
+                                </i>
+                                <i class="fab fa-js text-yellow-500">
+                                </i>
+                            </div>
+                        </div>
+                        <div
+                            class="absolute bottom-2 left-1/2 transform -translate-x-1/2 text-yellow-500 flex items-center space-x-1 bg-gray-800 bg-opacity-75 p-1 rounded">
+                            <div class="flex space-x-1">
+                                <i class="fas fa-star">
+                                </i>
+                                <i class="fas fa-star">
+                                </i>
+                                <i class="fas fa-star">
+                                </i>
+                                <i class="fas fa-star">
+                                </i>
+                                <i class="fas fa-star-half-alt">
+                                </i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="relative group border-4 border-gray-300 rounded-lg overflow-hidden shadow-lg">
+                        <img alt="Thumbnail of project 3, a web application project" class="w-full h-full object-cover"
+                            height="300"
+                            src="https://storage.googleapis.com/a1aa/image/MyUtotmA1QpJYgXLSXD-iYd5yrX3X0h3WNbsax949n4.jpg"
+                            width="400" />
+                        <div class="absolute top-2 right-2 text-green-500">
+                            <i class="fas fa-mobile-alt text-2xl">
+                            </i>
+                        </div>
+                        <div class="absolute inset-0 bg-gray-900 bg-opacity-50 flex flex-col items-center justify-center opacity-0 group-hover:opacity-100 transition border-4 border-green-500 rounded-lg"
+                            id="project-overlay-3">
+                            <i class="fas fa-book-open text-4xl text-white mb-2">
+                            </i>
+                            <p class="text-white text-lg">
+                                Project 3
+                            </p>
+                            <p class="text-white text-sm">
+                                Deskripsi singkat tentang proyek 3.
+                            </p>
+                        </div>
+                        <div
+                            class="absolute bottom-2 left-2 text-yellow-500 flex items-center space-x-2 bg-gray-800 bg-opacity-75 p-1 rounded">
+                            <div class="flex space-x-1">
+                                <i class="fab fa-react text-blue-500">
+                                </i>
+                                <i class="fab fa-node-js text-green-500">
+                                </i>
+                                <i class="fab fa-js text-yellow-500">
+                                </i>
+                            </div>
+                        </div>
+                        <div
+                            class="absolute bottom-2 left-1/2 transform -translate-x-1/2 text-yellow-500 flex items-center space-x-1 bg-gray-800 bg-opacity-75 p-1 rounded">
+                            <div class="flex space-x-1">
+                                <i class="fas fa-star">
+                                </i>
+                                <i class="fas fa-star">
+                                </i>
+                                <i class="fas fa-star">
+                                </i>
+                                <i class="fas fa-star">
+                                </i>
+                                <i class="fas fa-star-half-alt">
+                                </i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="relative group border-4 border-gray-300 rounded-lg overflow-hidden shadow-lg">
+                        <img alt="Thumbnail of project 4, a web application project" class="w-full h-full object-cover"
+                            height="300"
+                            src="https://storage.googleapis.com/a1aa/image/ljWkU4TKUtcs_fKqxtRHpFegn4lQ7415ey76aJVu7hM.jpg"
+                            width="400" />
+                        <div class="absolute top-2 right-2 text-red-500">
+                            <i class="fas fa-paint-brush text-2xl">
+                            </i>
+                        </div>
+                        <div class="absolute inset-0 bg-gray-900 bg-opacity-50 flex flex-col items-center justify-center opacity-0 group-hover:opacity-100 transition border-4 border-red-500 rounded-lg"
+                            id="project-overlay-4">
+                            <i class="fas fa-book-open text-4xl text-white mb-2">
+                            </i>
+                            <p class="text-white text-lg">
+                                Project 4
+                            </p>
+                            <p class="text-white text-sm">
+                                Deskripsi singkat tentang proyek 4.
+                            </p>
+                        </div>
+                        <div
+                            class="absolute bottom-2 left-2 text-yellow-500 flex items-center space-x-2 bg-gray-800 bg-opacity-75 p-1 rounded">
+                            <div class="flex space-x-1">
+                                <i class="fab fa-angular text-red-600">
+                                </i>
+                                <i class="fab fa-sass text-pink-500">
+                                </i>
+                                <i class="fab fa-js text-yellow-500">
+                                </i>
+                            </div>
+                        </div>
+                        <div
+                            class="absolute bottom-2 left-1/2 transform -translate-x-1/2 text-yellow-500 flex items-center space-x-1 bg-gray-800 bg-opacity-75 p-1 rounded">
+                            <div class="flex space-x-1">
+                                <i class="fas fa-star">
+                                </i>
+                                <i class="fas fa-star">
+                                </i>
+                                <i class="fas fa-star">
+                                </i>
+                                <i class="fas fa-star">
+                                </i>
+                                <i class="fas fa-star-half-alt">
+                                </i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="relative group border-4 border-gray-300 rounded-lg overflow-hidden shadow-lg">
+                        <img alt="Thumbnail of project 5, a web application project" class="w-full h-full object-cover"
+                            height="300"
+                            src="https://storage.googleapis.com/a1aa/image/lGp2QamisE5188D25shdkgnhwIngdyHSgtgxZkoNOEU.jpg"
+                            width="400" />
+                        <div class="absolute top-2 right-2 text-purple-500">
+                            <i class="fas fa-chart-line text-2xl">
+                            </i>
+                        </div>
+                        <div class="absolute inset-0 bg-gray-900 bg-opacity-50 flex flex-col items-center justify-center opacity-0 group-hover:opacity-100 transition border-4 border-purple-500 rounded-lg"
+                            id="project-overlay-5">
+                            <i class="fas fa-book-open text-4xl text-white mb-2">
+                            </i>
+                            <p class="text-white text-lg">
+                                Project 5
+                            </p>
+                            <p class="text-white text-sm">
+                                Deskripsi singkat tentang proyek 5.
+                            </p>
+                        </div>
+                        <div
+                            class="absolute bottom-2 left-2 text-yellow-500 flex items-center space-x-2 bg-gray-800 bg-opacity-75 p-1 rounded">
+                            <div class="flex space-x-1">
+                                <i class="fab fa-vuejs text-green-500">
+                                </i>
+                                <i class="fab fa-bootstrap text-purple-600">
+                                </i>
+                                <i class="fab fa-js text-yellow-500">
+                                </i>
+                            </div>
+                        </div>
+                        <div
+                            class="absolute bottom-2 left-1/2 transform -translate-x-1/2 text-yellow-500 flex items-center space-x-1 bg-gray-800 bg-opacity-75 p-1 rounded">
+                            <div class="flex space-x-1">
+                                <i class="fas fa-star">
+                                </i>
+                                <i class="fas fa-star">
+                                </i>
+                                <i class="fas fa-star">
+                                </i>
+                                <i class="fas fa-star">
+                                </i>
+                                <i class="fas fa-star-half-alt">
+                                </i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="relative group border-4 border-gray-300 rounded-lg overflow-hidden shadow-lg">
+                        <img alt="Thumbnail of project 6, a web application project" class="w-full h-full object-cover"
+                            height="300"
+                            src="https://storage.googleapis.com/a1aa/image/9oqawe71ERqKUFA6sCaLd0X9tIXaABfSkzP_0gijF9g.jpg"
+                            width="400" />
+                        <div class="absolute top-2 right-2 text-orange-500">
+                            <i class="fas fa-globe text-2xl">
+                            </i>
+                        </div>
+                        <div class="absolute inset-0 bg-gray-900 bg-opacity-50 flex flex-col items-center justify-center opacity-0 group-hover:opacity-100 transition border-4 border-orange-500 rounded-lg"
+                            id="project-overlay-6">
+                            <i class="fas fa-book-open text-4xl text-white mb-2">
+                            </i>
+                            <p class="text-white text-lg">
+                                Project 6
+                            </p>
+                            <p class="text-white text-sm">
+                                Deskripsi singkat tentang proyek 6.
+                            </p>
+                        </div>
+                        <div
+                            class="absolute bottom-2 left-2 text-yellow-500 flex items-center space-x-2 bg-gray-800 bg-opacity-75 p-1 rounded">
+                            <div class="flex space-x-1">
+                                <i class="fab fa-python text-green-500">
+                                </i>
+                                <i class="fab fa-django text-green-700">
+                                </i>
+                                <i class="fab fa-js text-yellow-500">
+                                </i>
+                            </div>
+                        </div>
+                        <div
+                            class="absolute bottom-2 left-1/2 transform -translate-x-1/2 text-yellow-500 flex items-center space-x-1 bg-gray-800 bg-opacity-75 p-1 rounded">
+                            <div class="flex space-x-1">
+                                <i class="fas fa-star">
+                                </i>
+                                <i class="fas fa-star">
+                                </i>
+                                <i class="fas fa-star">
+                                </i>
+                                <i class="fas fa-star">
+                                </i>
+                                <i class="fas fa-star-half-alt">
+                                </i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Layanan -->
+        <section class="py-16 bg-gray-100" id="layanan">
+            <div class="container mx-auto">
+                <h2 class="text-4xl font-bold text-center mb-8 text-gray-800">
+                    Layanan Kami
+                </h2>
+                <div class="flex flex-wrap justify-center">
+                    <div class="w-full md:w-1/3 p-4">
+                        <div
+                            class="relative bg-white p-8 rounded-lg shadow-lg text-center hover:shadow-2xl transition transform hover:-translate-y-2">
+                            <div class="absolute inset-0 border-4 border-blue-500 rounded-lg pointer-events-none"></div>
+                            <div class="relative z-10 mb-4">
+                                <i class="fas fa-code text-5xl text-blue-500"></i>
+                            </div>
+                            <h3 class="relative z-10 text-2xl font-bold mb-2 text-gray-800">
+                                Pengembangan Web
+                            </h3>
+                            <p class="relative z-10 text-gray-600">
+                                Membuat situs web yang responsif dan fungsional menggunakan teknologi terbaru.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="w-full md:w-1/3 p-4">
+                        <div
+                            class="relative bg-white p-8 rounded-lg shadow-lg text-center hover:shadow-2xl transition transform hover:-translate-y-2">
+                            <div class="absolute inset-0 border-4 border-green-500 rounded-lg pointer-events-none">
+                            </div>
+                            <div class="relative z-10 mb-4">
+                                <i class="fas fa-paint-brush text-5xl text-green-500"></i>
+                            </div>
+                            <h3 class="relative z-10 text-2xl font-bold mb-2 text-gray-800">
+                                Desain UI/UX
+                            </h3>
+                            <p class="relative z-10 text-gray-600">
+                                Merancang antarmuka yang ramah pengguna yang memberikan pengalaman pengguna yang
+                                optimal.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="w-full md:w-1/3 p-4">
+                        <div
+                            class="relative bg-white p-8 rounded-lg shadow-lg text-center hover:shadow-2xl transition transform hover:-translate-y-2">
+                            <div class="absolute inset-0 border-4 border-red-500 rounded-lg pointer-events-none"></div>
+                            <div class="relative z-10 mb-4">
+                                <i class="fas fa-mobile-alt text-5xl text-red-500"></i>
+                            </div>
+                            <h3 class="relative z-10 text-2xl font-bold mb-2 text-gray-800">
+                                Pengembangan Aplikasi Mobile
+                            </h3>
+                            <p class="relative z-10 text-gray-600">
+                                Mengembangkan aplikasi mobile yang fungsional dan menarik secara visual.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Blog -->
+        <section class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12" id="blog">
+            <div class="text-center">
+                <h2 class="text-3xl font-extrabold text-gray-900 sm:text-4xl">Dari Blog</h2>
+                <p class="mt-3 max-w-2xl mx-auto text-xl text-gray-500 sm:mt-4">Pelajari cara mengembangkan bisnis Anda
+                    dengan saran ahli kami.</p>
+            </div>
+            <div class="mt-12 grid gap-5 max-w-lg mx-auto lg:grid-cols-3 lg:max-w-none">
+                <div class="flex flex-col rounded-lg shadow-lg overflow-hidden">
+                    <div class="flex-shrink-0">
+                        <img alt="Seseorang sedang coding di laptop dengan secangkir kopi di sampingnya."
+                            class="h-48 w-full object-cover" height="400"
+                            src="https://storage.googleapis.com/a1aa/image/_grRki_YQwkuO5qdqrHJeKQ2l-o0VQIyTrQLsd5wY7s.jpg"
+                            width="600" />
+                    </div>
+                    <div class="flex-1 bg-white p-6 flex flex-col justify-between">
+                        <div class="flex-1">
+                            <p class="text-sm font-medium text-indigo-600">
+                                <a class="hover:underline" href="#">Coding</a>
+                            </p>
+                            <a class="block mt-2" href="#">
+                                <p class="text-xl font-semibold text-gray-900">Pengenalan JavaScript</p>
+                                <p class="mt-3 text-base text-gray-500">
+                                    JavaScript adalah bahasa pemrograman serbaguna yang digunakan untuk pengembangan
+                                    web. Pelajari dasar-dasar JavaScript dan cara mengimplementasikannya dalam proyek
+                                    Anda...
+                                    <span id="dots-1">...</span>
+                                    <span id="more-1" style="display:none;"> JavaScript memungkinkan Anda untuk membuat
+                                        halaman web yang interaktif dan dinamis. Dengan mempelajari JavaScript, Anda
+                                        dapat membuat aplikasi web yang lebih menarik dan fungsional.</span>
+                                </p>
+                            </a>
+                            <button onclick="toggleReadMore(1)" id="btn-1" class="text-indigo-600 hover:underline">Read
+                                more</button>
+                        </div>
+                        <div class="mt-6 flex items-center">
+                            <div class="flex-shrink-0">
+                                <img alt="Foto profil John Doe" class="h-10 w-10 rounded-full" height="100"
+                                    src="https://storage.googleapis.com/a1aa/image/tlz-kElln7O36zX-1EikdsTNXtLJIcjJq8IVcLRI2Jw.jpg"
+                                    width="100" />
+                            </div>
+                            <div class="ml-3">
+                                <p class="text-sm font-medium text-gray-900">
+                                    <a class="hover:underline" href="#">John Doe</a>
+                                </p>
+                                <p class="text-sm text-gray-500">Senior Developer</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="flex flex-col rounded-lg shadow-lg overflow-hidden">
+                    <div class="flex-shrink-0">
+                        <img alt="Seseorang sedang bekerja di laptop dengan kode di layar."
+                            class="h-48 w-full object-cover" height="400"
+                            src="https://storage.googleapis.com/a1aa/image/NVDLBEfEVh_DtvVXyALYNlqI4bGpb1xREjvB-SVNOfE.jpg"
+                            width="600" />
+                    </div>
+                    <div class="flex-1 bg-white p-6 flex flex-col justify-between">
+                        <div class="flex-1">
+                            <p class="text-sm font-medium text-indigo-600">
+                                <a class="hover:underline" href="#">Pengembangan Web</a>
+                            </p>
+                            <a class="block mt-2" href="#">
+                                <p class="text-xl font-semibold text-gray-900">Membangun Situs Web Responsif</p>
+                                <p class="mt-3 text-base text-gray-500">
+                                    Pelajari cara membuat situs web responsif yang terlihat bagus di semua perangkat.
+                                    Panduan ini mencakup dasar-dasar desain responsif dan cara mengimplementasikannya
+                                    menggunakan CSS dan JavaScript...
+                                    <span id="dots-2">...</span>
+                                    <span id="more-2" style="display:none;"> Dengan desain responsif, situs web Anda
+                                        akan menyesuaikan tampilannya sesuai dengan ukuran layar perangkat yang
+                                        digunakan, sehingga memberikan pengalaman pengguna yang optimal.</span>
+                                </p>
+                            </a>
+                            <button onclick="toggleReadMore(2)" id="btn-2" class="text-indigo-600 hover:underline">Read
+                                more</button>
+                        </div>
+                        <div class="mt-6 flex items-center">
+                            <div class="flex-shrink-0">
+                                <img alt="Foto profil Jane Smith" class="h-10 w-10 rounded-full" height="100"
+                                    src="https://storage.googleapis.com/a1aa/image/LFwJwUOLlGBaGelrXBTNdPfE7US6QM2UIORfry8EHxA.jpg"
+                                    width="100" />
+                            </div>
+                            <div class="ml-3">
+                                <p class="text-sm font-medium text-gray-900">
+                                    <a class="hover:underline" href="#">Jane Smith</a>
+                                </p>
+                                <p class="text-sm text-gray-500">Front-end Developer</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="flex flex-col rounded-lg shadow-lg overflow-hidden">
+                    <div class="flex-shrink-0">
+                        <img alt="Seseorang sedang menulis kode di komputer desktop." class="h-48 w-full object-cover"
+                            height="400"
+                            src="https://storage.googleapis.com/a1aa/image/hyvyCB8ZdTzkLHTCrqT6sWPRX6qzgS5rykfL80ng--g.jpg"
+                            width="600" />
+                    </div>
+                    <div class="flex-1 bg-white p-6 flex flex-col justify-between">
+                        <div class="flex-1">
+                            <p class="text-sm font-medium text-indigo-600">
+                                <a class="hover:underline" href="#">Pemrograman</a>
+                            </p>
+                            <a class="block mt-2" href="#">
+                                <p class="text-xl font-semibold text-gray-900">Menguasai Python</p>
+                                <p class="mt-3 text-base text-gray-500">
+                                    Python adalah bahasa pemrograman yang kuat dan mudah dipelajari. Artikel ini
+                                    mencakup konsep-konsep Python tingkat lanjut dan cara menerapkannya dalam proyek
+                                    nyata...
+                                    <span id="dots-3">...</span>
+                                    <span id="more-3" style="display:none;"> Dengan menguasai Python, Anda dapat
+                                        mengembangkan berbagai jenis aplikasi, mulai dari web, data science, hingga
+                                        machine learning.</span>
+                                </p>
+                            </a>
+                            <button onclick="toggleReadMore(3)" id="btn-3" class="text-indigo-600 hover:underline">Read
+                                more</button>
+                        </div>
+                        <div class="mt-6 flex items-center">
+                            <div class="flex-shrink-0">
+                                <img alt="Foto profil Alex Johnson" class="h-10 w-10 rounded-full" height="100"
+                                    src="https://storage.googleapis.com/a1aa/image/x0aCEwn64yQKzNG8oHnXAto0Vxzb7Xpa84GhqBsOjLw.jpg"
+                                    width="100" />
+                            </div>
+                            <div class="ml-3">
+                                <p class="text-sm font-medium text-gray-900">
+                                    <a class="hover:underline" href="#">Alex Johnson</a>
+                                </p>
+                                <p class="text-sm text-gray-500">Software Engineer</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="text-center mt-8">
+                <a href="#" class="text-indigo-600 hover:underline text-lg">Lihat Lainnya</a>
+            </div>
+        </section>
+        <!-- Contact & Call-To-Action -->
+        <section class="py-16 bg-gray-100" id="contact">
+            <div class="container mx-auto px-4 md:px-8 lg:px-16">
+                <h2 class="text-4xl font-bold text-center mb-8 text-gray-800 relative inline-block">
+                    <span class="relative z-10">
+                        Hubungi Saya
+                    </span>
+                    <span class="absolute inset-x-0 bottom-0 h-2 bg-yellow-500 z-0">
+                    </span>
+                </h2>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                    <div class="bg-white p-8 rounded-lg shadow-lg hover:shadow-xl transition">
+                        <h3 class="text-2xl font-bold mb-4 text-gray-800">
+                            Hubungi Saya
+                        </h3>
+                        <form>
+                            <div class="mb-4">
+                                <label class="block text-gray-700" for="name">
+                                    Nama
+                                </label>
+                                <input
+                                    class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-gray-200"
+                                    id="name" placeholder="Masukkan nama Anda" type="text" />
+                            </div>
+                            <div class="mb-4">
+                                <label class="block text-gray-700" for="email">
+                                    Email
+                                </label>
+                                <input
+                                    class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-gray-200"
+                                    id="email" placeholder="Masukkan email Anda" type="email" />
+                            </div>
+                            <div class="mb-4">
+                                <label class="block text-gray-700" for="message">
+                                    Pesan
+                                </label>
+                                <textarea
+                                    class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-gray-200"
+                                    id="message" placeholder="Tulis pesan Anda">
+            </textarea>
+                            </div>
+                            <button
+                                class="w-full bg-gray-900 text-white px-4 py-2 rounded-lg hover:bg-gray-700 transition"
+                                type="submit">
+                                Kirim Pesan
+                            </button>
+                        </form>
+                    </div>
+                    <div class="bg-white p-8 rounded-lg shadow-lg hover:shadow-xl transition">
+                        <h3 class="text-2xl font-bold mb-4 text-gray-800">
+                            Lokasi Saya
+                        </h3>
+                        <div class="mb-4">
+                            <i class="fas fa-map-marker-alt text-gray-700 text-2xl mr-2">
+                            </i>
+                            <span class="text-lg text-gray-700">
+                                Jalan Contoh No. 123, Kota, Negara
+                            </span>
+                        </div>
+                        <div class="mb-4">
+                            <i class="fas fa-phone-alt text-gray-700 text-2xl mr-2">
+                            </i>
+                            <span class="text-lg text-gray-700">
+                                +62 123 456 7890
+                            </span>
+                        </div>
+                        <div class="mb-4">
+                            <i class="fas fa-envelope text-gray-700 text-2xl mr-2">
+                            </i>
+                            <span class="text-lg text-gray-700">
+                                email@example.com
+                            </span>
+                        </div>
+                        <div class="mb-4">
+                            <i class="fas fa-clock text-gray-700 text-2xl mr-2">
+                            </i>
+                            <span class="text-lg text-gray-700">
+                                Sen - Jum: 9:00 AM - 6:00 PM
+                            </span>
+                        </div>
+                        <div class="mt-8">
+                            <iframe class="w-full h-64 rounded-lg" frameborder="0"
+                                src="https://maps.google.com/maps?q=Jalan%20Anis%20Kembang%20no%201%20pekauman%2052125%20Tegal%20Barat%20Kota%20Tegal&hl=en&z=14&output=embed"
+                                style="border:0;" allowfullscreen="" loading="lazy">
+                            </iframe>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-12">
+        <div class="container mx-auto text-center">
+            <div class="mb-8">
+                <h2 class="text-3xl font-bold">My Portfolio</h2>
+                <p class="text-gray-400 mt-2">Showcasing my work and projects</p>
+            </div>
+            <div class="flex justify-center space-x-6 mb-8">
+                <a class="hover:text-gray-400" href="#">
+                    <i class="fab fa-facebook-f text-2xl"></i>
+                </a>
+                <a class="hover:text-gray-400" href="#">
+                    <i class="fab fa-twitter text-2xl"></i>
+                </a>
+                <a class="hover:text-gray-400" href="#">
+                    <i class="fab fa-linkedin-in text-2xl"></i>
+                </a>
+                <a class="hover:text-gray-400" href="#">
+                    <i class="fab fa-github text-2xl"></i>
+                </a>
+            </div>
+            <div class="flex justify-center space-x-8 mb-8">
+                <a class="hover:text-gray-400" href="#">Home</a>
+                <a class="hover:text-gray-400" href="#">Tentang</a>
+                <a class="hover:text-gray-400" href="#">Layanan</a>
+                <a class="hover:text-gray-400" href="#">Portfolio</a>
+                <a class="hover:text-gray-400" href="#">Contact</a>
+            </div>
+            <p class="text-gray-400">
+                © 2023 My Portfolio. All rights reserved.
+            </p>
+        </div>
+    </footer>
+    <script>
+        window.addEventListener('scroll', function () {
+            const header = document.getElementById('header');
+            if (window.scrollY > 50) {
+                header.classList.add('bg-gray-900');
+                header.classList.remove('bg-transparent');
+            } else {
+                header.classList.add('bg-transparent');
+                header.classList.remove('bg-gray-900');
+            }
+        });
+    </script>
+</body>
+
+</html>
